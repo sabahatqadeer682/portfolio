@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sabahat Qadeer - Portfolio
 
-## Getting Started
+> A modern, terminal-inspired portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+🌐 **Live Site:** [Coming Soon]
+💼 **LinkedIn:** [linkedin.com/in/sabahatqadeer](https://www.linkedin.com/in/sabahatqadeer)
+📧 **Contact:** sabahatqadeerbhati@gmail.com
+
+---
+
+## About
+
+Hi, I'm **Sabahat Qadeer**, a Full-Stack Developer specializing in the MERN stack and React Native mobile development. Currently pursuing BS Software Engineering at Riphah International University.
+
+This portfolio showcases my projects, skills, and journey as a developer.
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Custom CSS + Framer Motion
+- **Icons:** Lucide React
+- **Deployment:** Vercel
+
+---
+
+## Features
+
+- Terminal-inspired UI with animated code snippets
+- Fully responsive (mobile, tablet, desktop)
+- Smooth scroll animations and reveal effects
+- Project showcase with detailed case studies
+- Education timeline with git-commit style design
+- Skills cluster with floating animations
+- Custom cursor and scroll progress bar
+- SEO optimized
+
+---
+
+## Run Locally
 
 ```bash
+# Clone the repo
+git clone https://github.com/sabahatqadeer682/portfolio.git
+
+# Navigate to project folder
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+portfolio-app/
+├── src/
+│   ├── app/              # Next.js App Router pages
+│   ├── components/       # Reusable React components
+│   └── ...
+├── public/               # Static assets
+└── ...
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License & Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This is my **personal portfolio**. You're welcome to take inspiration from the design and code, but please:
 
-## Deploy on Vercel
+- **Don't copy 1:1** - build something unique that represents YOU
+- **Don't use my name, photo, or personal content**
+- **Give credit** if you use a significant portion of code
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Build your own story. 🚀
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Contact
+
+- **Email:** sabahatqadeerbhati@gmail.com
+- **GitHub:** [@sabahatqadeer682](https://github.com/sabahatqadeer682)
+- **LinkedIn:** [Sabahat Qadeer](https://www.linkedin.com/in/sabahatqadeer)
+- **Location:** Wah Cantt, Pakistan
+
+---
+
+Built with ☕ and lots of late nights.
