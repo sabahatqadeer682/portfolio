@@ -72,7 +72,7 @@ const positioned = skills.map((s) => {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative px-6 py-24 lg:px-10 lg:py-32">
+    <section id="skills" className="relative px-4 py-16 sm:px-6 sm:py-24 lg:px-10 lg:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHead
           cmd="cat skills.json"
@@ -86,13 +86,13 @@ export default function Skills() {
               <span className="term-dot bg-red-500/70" />
               <span className="term-dot bg-yellow-500/70" />
               <span className="term-dot bg-emerald-500/70" />
-              <span className="ml-2 text-slate-500">$~/portfolio/skills.graph</span>
-              <span className="text-slate-700">·</span>
-              <span className="inline-flex items-center gap-1.5 text-[11px] text-emerald-400">
+              <span className="ml-2 truncate text-slate-500">$~/portfolio/skills.graph</span>
+              <span className="hidden text-slate-700 sm:inline">·</span>
+              <span className="hidden items-center gap-1.5 text-[11px] text-emerald-400 sm:inline-flex">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 live
               </span>
-              <span className="ml-auto hidden items-center gap-1.5 font-mono text-[11px] text-slate-500 sm:inline-flex">
+              <span className="ml-auto hidden items-center gap-1.5 font-mono text-[11px] text-slate-500 lg:inline-flex">
                 <Sparkles className="h-3 w-3 text-amber-300" />
                 hover the nodes
               </span>
@@ -102,14 +102,50 @@ export default function Skills() {
               <div className="pointer-events-none absolute -top-20 left-1/4 h-80 w-80 rounded-full bg-cyan-500/10 blur-[80px]" />
               <div className="pointer-events-none absolute -bottom-20 right-1/4 h-80 w-80 rounded-full bg-pink-500/10 blur-[80px]" />
 
-              <p className="relative mb-2 font-mono text-[12px] text-slate-500">
+              <p className="relative mb-2 font-mono text-[11px] text-slate-500 sm:text-[12px]">
                 <span className="text-slate-600">//</span> {skills.length} nodes ·
                 3 orbital rings · connected to one core
               </p>
 
+              {/* Mobile/tablet: skill pills grouped by ring */}
+              <div className="relative space-y-5 md:hidden">
+                {[0, 1, 2].map((ring) => (
+                  <div key={ring}>
+                    <p className="mb-2 font-mono text-[11px] text-slate-500">
+                      <span className="text-emerald-400">$</span> ring[{ring}]{" "}
+                      <span className="text-slate-700">·</span>{" "}
+                      {ring === 0 ? "core" : ring === 1 ? "mid" : "outer"}
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {byRing[ring].map((s) => {
+                        const c = toneColor[s.tone];
+                        return (
+                          <span
+                            key={s.name}
+                            className="inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1 font-mono text-[11px]"
+                            style={{
+                              borderColor: c.stroke + "55",
+                              background: c.fill,
+                              color: c.text,
+                            }}
+                          >
+                            <span
+                              className="h-1.5 w-1.5 rounded-full"
+                              style={{ background: c.stroke }}
+                            />
+                            {s.name}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Desktop: full orbital SVG graph */}
               <svg
                 viewBox={`0 0 ${W} ${H}`}
-                className="relative h-auto w-full select-none"
+                className="relative hidden h-auto w-full select-none md:block"
                 role="img"
                 aria-label="Skills graph"
               >

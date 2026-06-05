@@ -12,7 +12,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="relative px-6 py-24 lg:px-10 lg:py-32">
+    <section id="about" className="relative px-4 py-16 sm:px-6 sm:py-24 lg:px-10 lg:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHead
           cmd="cat about.md"
@@ -20,7 +20,7 @@ export default function About() {
           subtitle="Who I am and what I do"
         />
 
-        <div className="grid items-start gap-8 lg:grid-cols-[1.2fr_1fr]">
+        <div className="grid items-start gap-6 sm:gap-8 lg:grid-cols-[1.2fr_1fr]">
           <Reveal>
             <div className="term-window">
               <div className="term-titlebar">
@@ -29,7 +29,7 @@ export default function About() {
                 <span className="term-dot bg-emerald-500/70" />
                 <span className="ml-2 text-slate-500">about.md</span>
               </div>
-              <div className="space-y-4 p-6 font-mono text-[14px] leading-relaxed text-slate-400">
+              <div className="space-y-4 p-4 font-mono text-[13px] leading-relaxed text-slate-400 sm:p-6 sm:text-[14px]">
                 <p>
                   <span className="text-slate-600"># </span>
                   <span className="text-slate-100">$ whoami</span>
@@ -76,13 +76,13 @@ export default function About() {
                 <div className="absolute inset-0 -m-4 animate-spin-slow rounded-full border border-dashed border-cyan-400/30" />
                 <div className="absolute inset-0 -m-8 animate-spin-slower rounded-full border border-dashed border-emerald-400/25" />
 
-                <div className="animate-float relative h-48 w-48 rounded-full bg-gradient-to-br from-cyan-400 via-emerald-400 to-amber-300 p-[3px] shadow-[0_0_60px_-10px_rgba(34,211,238,0.55)] sm:h-56 sm:w-56">
+                <div className="animate-float relative h-40 w-40 rounded-full bg-gradient-to-br from-cyan-400 via-emerald-400 to-amber-300 p-[3px] shadow-[0_0_60px_-10px_rgba(34,211,238,0.55)] sm:h-56 sm:w-56">
                   <div className="relative h-full w-full overflow-hidden rounded-full bg-slate-950">
                     <Image
                       src="/ProfileImage.jpeg"
                       alt="Sabahat Qadeer"
                       fill
-                      sizes="224px"
+                      sizes="(max-width: 640px) 160px, 224px"
                       className="object-cover"
                       style={{ objectPosition: "50% 28%" }}
                     />
@@ -109,7 +109,7 @@ export default function About() {
                 <span className="term-dot bg-emerald-500/70" />
                 <span className="ml-2 text-slate-500">profile.json</span>
               </div>
-              <div className="p-6 font-mono text-[13px]">
+              <div className="p-4 font-mono text-[12px] sm:p-6 sm:text-[13px]">
                 <div className="text-slate-400">
                   <span className="text-slate-500">&#123;</span>
                 </div>

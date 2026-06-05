@@ -21,7 +21,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative border-t border-slate-800/70 bg-gradient-to-b from-slate-950/40 via-slate-950/70 to-slate-950 px-6 pt-14 pb-6 lg:px-10">
+    <footer className="relative border-t border-slate-800/70 bg-gradient-to-b from-slate-950/40 via-slate-950/70 to-slate-950 px-4 pt-12 pb-6 sm:px-6 sm:pt-14 lg:px-10">
       {/* top neon hairline */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent" />
       {/* ambient glows */}
@@ -29,7 +29,7 @@ export default function Footer() {
       <div className="pointer-events-none absolute -bottom-10 right-1/4 h-56 w-56 rounded-full bg-pink-500/10 blur-[80px]" />
 
       <div className="relative mx-auto max-w-7xl">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand + status */}
           <div className="lg:col-span-1">
             <Link
@@ -199,8 +199,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-slate-800/70 pt-5 font-mono text-[11px] text-slate-600 sm:flex-row">
-          <div className="flex items-center gap-2">
+        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-slate-800/70 pt-5 text-center font-mono text-[11px] text-slate-600 sm:mt-12 sm:flex-row sm:text-left">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 sm:justify-start">
             <span className="text-slate-500">$</span>
             <span>
               echo &quot;© {year} Sabahat Qadeer - crafted with

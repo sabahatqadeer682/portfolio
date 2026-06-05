@@ -58,7 +58,7 @@ const entries: Entry[] = [
 
 export default function Education() {
   return (
-    <section id="education" className="relative px-6 py-24 lg:px-10 lg:py-32">
+    <section id="education" className="relative px-4 py-16 sm:px-6 sm:py-24 lg:px-10 lg:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHead
           cmd="git log --education"
@@ -72,9 +72,9 @@ export default function Education() {
               <span className="term-dot bg-red-500/70" />
               <span className="term-dot bg-yellow-500/70" />
               <span className="term-dot bg-emerald-500/70" />
-              <span className="ml-2 text-slate-500">$ git log --education</span>
+              <span className="ml-2 truncate text-slate-500">$ git log --education</span>
             </div>
-            <div className="space-y-7 p-6 font-mono text-[13px]">
+            <div className="space-y-6 p-4 font-mono text-[12px] sm:space-y-7 sm:p-6 sm:text-[13px]">
               {entries.map((e, i) => (
                 <div key={e.hash} className="relative">
                   {/* connecting line */}
@@ -82,8 +82,8 @@ export default function Education() {
                     <div className="absolute top-5 left-[7px] h-full w-px bg-slate-800" />
                   )}
 
-                  <div className="flex items-center gap-2">
-                    <span className="inline-block h-3.5 w-3.5 rounded-full border border-cyan-500/50 bg-cyan-500/20" />
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                    <span className="inline-block h-3.5 w-3.5 shrink-0 rounded-full border border-cyan-500/50 bg-cyan-500/20" />
                     <span className="text-amber-300">commit</span>
                     <span className="text-amber-300">{e.hash}</span>
                     <span className="text-slate-500">(</span>
@@ -91,7 +91,7 @@ export default function Education() {
                     <span className="text-emerald-400">{e.branch}</span>
                     <span className="text-slate-500">)</span>
                   </div>
-                  <div className="mt-1 ml-6 text-slate-500">
+                  <div className="mt-1 ml-6 break-all text-slate-500">
                     Author: <span className="text-slate-300">Sabahat Qadeer</span>{" "}
                     &lt;sabahatqadeerbhati@gmail.com&gt;
                   </div>
@@ -99,18 +99,18 @@ export default function Education() {
                     Date:   <span className="text-slate-300">{e.date}</span>
                   </div>
 
-                  <div className="mt-3 ml-6 rounded-md border border-slate-800 bg-slate-900/40 p-4">
-                    <h3 className="text-[15px] font-bold text-slate-100">
+                  <div className="mt-3 ml-3 rounded-md border border-slate-800 bg-slate-900/40 p-3 sm:ml-6 sm:p-4">
+                    <h3 className="text-[14px] font-bold text-slate-100 sm:text-[15px]">
                       {e.title}
                     </h3>
-                    <h4 className="mt-0.5 text-[12px] font-medium text-cyan-300">
+                    <h4 className="mt-0.5 text-[11px] font-medium text-cyan-300 sm:text-[12px]">
                       {e.org}
                     </h4>
                     <ul className="mt-3 space-y-1.5">
                       {e.bullets.map((b) => (
                         <li
                           key={b}
-                          className="flex gap-2 text-[13px] text-slate-400"
+                          className="flex gap-2 text-[12px] text-slate-400 sm:text-[13px]"
                         >
                           <span className="text-emerald-400">+</span>
                           <span>{b}</span>

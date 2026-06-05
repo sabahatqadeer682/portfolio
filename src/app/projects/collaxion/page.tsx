@@ -85,7 +85,7 @@ export default function CollaXionPage() {
       <ScrollProgress />
       <Navbar />
 
-      <main className="px-6 pt-32 pb-24 lg:px-10">
+      <main className="px-4 pt-24 pb-16 sm:px-6 sm:pt-32 sm:pb-24 lg:px-10">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <Link
@@ -110,7 +110,7 @@ export default function CollaXionPage() {
                   live
                 </span>
               </div>
-              <div className="grid items-center gap-10 p-8 lg:grid-cols-[1.5fr_1fr] lg:p-10">
+              <div className="grid items-center gap-8 p-5 sm:gap-10 sm:p-8 lg:grid-cols-[1.5fr_1fr] lg:p-10">
                 <div>
                   <div className="font-mono text-[12px] text-slate-500">
                     <span className="text-emerald-400">$</span>{" "}
@@ -118,7 +118,7 @@ export default function CollaXionPage() {
                     <span className="text-cyan-300">README.md</span>
                   </div>
                   <div className="mt-6 flex items-center gap-4">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white p-2 shadow-[0_0_28px_-4px_rgba(34,211,238,0.55)] sm:h-20 sm:w-20">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white p-2 shadow-[0_0_28px_-4px_rgba(34,211,238,0.55)] sm:h-20 sm:w-20">
                       <Image
                         src="/collaxion-logo.png"
                         alt="CollaXion logo"
@@ -127,7 +127,7 @@ export default function CollaXionPage() {
                         className="h-full w-full object-contain"
                       />
                     </div>
-                    <h1 className="font-mono text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+                    <h1 className="font-mono text-2xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
                       <span className="text-gradient">CollaXion</span>
                     </h1>
                   </div>
@@ -156,10 +156,10 @@ export default function CollaXionPage() {
                 </div>
 
                 <div className="flex justify-center">
-                  <div className="relative flex h-60 w-60 items-center justify-center sm:h-72 sm:w-72">
+                  <div className="relative flex h-48 w-48 items-center justify-center sm:h-72 sm:w-72">
                     <div className="absolute inset-0 animate-spin-slow rounded-full border border-dashed border-cyan-500/40" />
                     <div className="absolute inset-5 animate-spin-slower rounded-full border border-dashed border-emerald-500/30" />
-                    <div className="animate-float flex h-44 w-44 items-center justify-center rounded-full bg-white p-6 shadow-[0_0_50px_-6px_rgba(34,211,238,0.55)] sm:h-52 sm:w-52">
+                    <div className="animate-float flex h-36 w-36 items-center justify-center rounded-full bg-white p-5 shadow-[0_0_50px_-6px_rgba(34,211,238,0.55)] sm:h-52 sm:w-52 sm:p-6">
                       <Image
                         src="/collaxion-logo.png"
                         alt="CollaXion logo"
@@ -313,7 +313,7 @@ export default function CollaXionPage() {
 
           {/* CTA */}
           <Reveal>
-            <div className="mt-16 rounded-md border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 via-slate-900/50 to-emerald-500/10 p-10 text-center">
+            <div className="mt-16 rounded-md border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 via-slate-900/50 to-emerald-500/10 p-6 text-center sm:p-10">
               <div className="font-mono text-[12px] text-slate-500">
                 <span className="text-emerald-400">$</span>{" "}
                 <span className="text-cyan-300">./collaborate.sh</span>

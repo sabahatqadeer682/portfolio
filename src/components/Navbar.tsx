@@ -41,7 +41,7 @@ export default function Navbar() {
           : "border-b border-transparent py-5"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 lg:px-10">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:gap-6 sm:px-6 lg:px-10">
         <Link href="/" className="font-mono text-sm font-semibold tracking-tight">
           <span className="text-slate-500">~/</span>
           <span className="text-cyan-400">sabahat</span>
@@ -49,14 +49,14 @@ export default function Navbar() {
           <span className="animate-caret ml-1 text-cyan-400">_</span>
         </Link>
 
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-0.5 lg:flex">
           {links.map((l) => {
             const isActive = active === l.id;
             return (
               <li key={l.href}>
                 <Link
                   href={l.href}
-                  className={`relative rounded-md px-3 py-1.5 font-mono text-[13px] transition-colors ${
+                  className={`relative rounded-md px-2.5 py-1.5 font-mono text-[12px] transition-colors xl:px-3 xl:text-[13px] ${
                     isActive
                       ? "bg-cyan-500/10 text-cyan-300"
                       : "text-slate-400 hover:bg-slate-800/50 hover:text-slate-100"
@@ -72,13 +72,13 @@ export default function Navbar() {
 
         <Link
           href="/#contact"
-          className="hidden items-center gap-2 rounded-md border border-cyan-500/40 bg-cyan-500/10 px-4 py-1.5 font-mono text-[13px] font-semibold text-cyan-300 transition-colors hover:bg-cyan-500/20 hover:text-cyan-200 md:inline-flex"
+          className="hidden items-center gap-2 rounded-md border border-cyan-500/40 bg-cyan-500/10 px-3 py-1.5 font-mono text-[12px] font-semibold text-cyan-300 transition-colors hover:bg-cyan-500/20 hover:text-cyan-200 lg:inline-flex xl:px-4 xl:text-[13px]"
         >
           <span className="text-slate-500">$</span> hire-me
         </Link>
 
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-md text-slate-300 md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-md text-slate-300 lg:hidden"
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
         >
@@ -91,7 +91,7 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`mx-4 mt-2 origin-top overflow-hidden rounded-xl border border-slate-800/70 bg-slate-950/95 backdrop-blur-xl transition-all duration-300 md:hidden ${
+        className={`mx-4 mt-2 origin-top overflow-hidden rounded-xl border border-slate-800/70 bg-slate-950/95 backdrop-blur-xl transition-all duration-300 lg:hidden ${
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >

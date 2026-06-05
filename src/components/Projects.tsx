@@ -96,7 +96,7 @@ const statusColor: Record<Project["status"], string> = {
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative px-6 py-24 lg:px-10 lg:py-32">
+    <section id="projects" className="relative px-4 py-16 sm:px-6 sm:py-24 lg:px-10 lg:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHead
           cmd="ls -la projects/"
@@ -104,7 +104,7 @@ export default function Projects() {
           subtitle="Pinned repositories - a selection of things I've built"
         />
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => (
             <Reveal
               key={p.slug}
@@ -123,7 +123,7 @@ export default function Projects() {
                 <span className="term-dot bg-emerald-500/70" />
                 <span className="ml-2 text-slate-500">collab.sh</span>
               </div>
-              <div className="flex flex-1 flex-col justify-center p-6 font-mono">
+              <div className="flex flex-1 flex-col justify-center p-5 font-mono sm:p-6">
                 <p className="text-[13px] text-slate-500">// next-up</p>
                 <h3 className="mt-2 text-lg font-bold text-slate-100">
                   Have a project in mind?
@@ -160,11 +160,11 @@ function ProjectCard({ p }: { p: Project }) {
         )}
       </div>
 
-      <div className="flex flex-1 flex-col p-5 font-mono">
+      <div className="flex flex-1 flex-col p-4 font-mono sm:p-5">
         <div className="mb-3 flex items-start justify-between gap-3">
-          <div className="flex items-center gap-3">
+          <div className="flex min-w-0 items-center gap-3">
             {p.logo && (
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white p-1 shadow-[0_0_24px_-6px_rgba(34,211,238,0.45)]">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white p-1 shadow-[0_0_24px_-6px_rgba(34,211,238,0.45)]">
                 <Image
                   src={p.logo}
                   alt={`${p.title} logo`}
@@ -174,7 +174,7 @@ function ProjectCard({ p }: { p: Project }) {
                 />
               </div>
             )}
-            <div>
+            <div className="min-w-0">
               <h3 className="text-base font-bold text-slate-100 sm:text-lg">
                 {p.title}
               </h3>
@@ -182,7 +182,7 @@ function ProjectCard({ p }: { p: Project }) {
             </div>
           </div>
           <span
-            className={`inline-flex items-center gap-1.5 rounded-md border px-2 py-0.5 text-[10px] tracking-wider uppercase ${statusColor[p.status]}`}
+            className={`inline-flex shrink-0 items-center gap-1.5 rounded-md border px-2 py-0.5 text-[10px] tracking-wider uppercase ${statusColor[p.status]}`}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-current" />
             {p.status}
