@@ -2,27 +2,28 @@
 
 > A modern, terminal-inspired portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
-🌐 **Live Site:** [Coming Soon]
-💼 **LinkedIn:** [linkedin.com/in/sabahatqadeer](https://www.linkedin.com/in/sabahatqadeer)
-📧 **Contact:** sabahatqadeerbhati@gmail.com
+
+**LinkedIn:** [linkedin.com/in/sabahatqadeer](https://www.linkedin.com/in/sabahatqadeer)
+**Contact:** sabahatqadeerbhati@gmail.com
 
 ---
 
 ## About
 
-Hi, I'm **Sabahat Qadeer**, a Full-Stack Developer specializing in the MERN stack and React Native mobile development. Currently pursuing BS Software Engineering at Riphah International University.
+Hi, I'm **Sabahat Qadeer**, a Full-Stack Developer specializing in the MERN stack and React Native mobile development. I recently graduated with a BS in Software Engineering from Riphah International University (Gulberg Green Campus, Islamabad).
 
-This portfolio showcases my projects, skills, and journey as a developer.
+This portfolio showcases my projects, skills, and journey as a developer — and I'm currently **open to full-time, remote and freelance opportunities**.
 
 ---
 
 ## Tech Stack
 
-- **Framework:** Next.js 15 (App Router)
+- **Framework:** Next.js 16 (App Router, Turbopack)
 - **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Animations:** Custom CSS + Framer Motion
+- **Styling:** Tailwind CSS v4
+- **Animations:** Custom CSS keyframes
 - **Icons:** Lucide React
+- **Email:** Resend (contact form backend)
 - **Deployment:** Vercel
 
 ---
@@ -30,11 +31,12 @@ This portfolio showcases my projects, skills, and journey as a developer.
 ## Features
 
 - Terminal-inspired UI with animated code snippets
-- Fully responsive (mobile, tablet, desktop)
+- Fully responsive — optimized for mobile, tablet, and desktop
 - Smooth scroll animations and reveal effects
 - Project showcase with detailed case studies
 - Education timeline with git-commit style design
-- Skills cluster with floating animations
+- Skills graph with orbital rings (desktop) + pill-grid fallback (mobile)
+- Working contact form — sends emails directly to my inbox via Resend
 - Custom cursor and scroll progress bar
 - SEO optimized
 
@@ -82,7 +84,7 @@ This is my **personal portfolio**. You're welcome to take inspiration from the d
 - **Don't use my name, photo, or personal content**
 - **Give credit** if you use a significant portion of code
 
-Build your own story. 🚀
+Build your own story. 
 
 ---
 
